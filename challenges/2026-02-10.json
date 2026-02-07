@@ -1,0 +1,15 @@
+{
+  "id": "2026-02-10",
+  "language": "javascript",
+  "difficulty": "medium",
+  "code": "const obj = {\n  value: 42,\n  regular() { return this.value; },\n  arrow: () => this.value\n};\nconsole.log(obj.regular(), obj.arrow());",
+  "options": [
+    "42 42",
+    "undefined undefined",
+    "42 undefined",
+    "TypeError"
+  ],
+  "correctIndex": 2,
+  "explanation": "regular uses obj as this; arrow captures lexical this from module scope (undefined value).",
+  "category": "this"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "2026-02-07",
+  "language": "javascript",
+  "difficulty": "easy",
+  "code": "console.log(typeof null);",
+  "options": [
+    "\"null\"",
+    "\"object\"",
+    "\"undefined\"",
+    "ReferenceError"
+  ],
+  "correctIndex": 1,
+  "explanation": "typeof null returns \"object\" due to legacy behavior kept for compatibility.",
+  "category": "types-coercion"
+}

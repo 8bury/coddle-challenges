@@ -1,0 +1,60 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Coddle Challenge",
+  "type": "object",
+  "required": [
+    "id",
+    "language",
+    "difficulty",
+    "code",
+    "options",
+    "correctIndex",
+    "explanation"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "language": {
+      "type": "string",
+      "const": "javascript"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["easy", "medium", "hard"]
+    },
+    "code": {
+      "type": "string",
+      "minLength": 1
+    },
+    "options": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "correctIndex": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "explanation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "types-coercion",
+        "scope-hoisting",
+        "closures",
+        "this",
+        "async",
+        "arrays-objects"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

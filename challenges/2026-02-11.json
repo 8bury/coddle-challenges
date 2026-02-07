@@ -1,0 +1,15 @@
+{
+  "id": "2026-02-11",
+  "language": "javascript",
+  "difficulty": "easy",
+  "code": "const a = [1, 2];\nconst b = a;\nb.push(3);\nconsole.log(a.length === b.length, a === b);",
+  "options": [
+    "true true",
+    "true false",
+    "false true",
+    "false false"
+  ],
+  "correctIndex": 0,
+  "explanation": "Arrays are reference types; a and b point to the same array object.",
+  "category": "arrays-objects"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "2026-02-09",
+  "language": "javascript",
+  "difficulty": "medium",
+  "code": "for (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 0);\n}",
+  "options": [
+    "0 1 2",
+    "3 3 3",
+    "2 2 2",
+    "ReferenceError"
+  ],
+  "correctIndex": 1,
+  "explanation": "var is function-scoped, so all callbacks read the same final value of i (3).",
+  "category": "async"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "2026-02-08",
+  "language": "javascript",
+  "difficulty": "easy",
+  "code": "console.log(a);\nvar a = 10;",
+  "options": [
+    "undefined",
+    "10",
+    "ReferenceError",
+    "TypeError"
+  ],
+  "correctIndex": 0,
+  "explanation": "var declarations are hoisted and initialized with undefined before assignment.",
+  "category": "scope-hoisting"
+}

@@ -1,0 +1,9 @@
+﻿{
+  "name": "coddle-challenges",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate:challenges": "node scripts/validate-challenges.mjs"
+  }
+}
