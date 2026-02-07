@@ -2,14 +2,14 @@
   "id": "2026-02-07",
   "language": "javascript",
   "difficulty": "easy",
-  "code": "console.log(typeof null);",
+  "code": "console.log(0 == false, 0 === false);",
   "options": [
-    "\"null\"",
-    "\"object\"",
-    "\"undefined\"",
-    "ReferenceError"
+    "true true",
+    "true false",
+    "false true",
+    "false false"
   ],
   "correctIndex": 1,
-  "explanation": "typeof null returns \"object\" due to legacy behavior kept for compatibility.",
+  "explanation": "Loose equality coerces values (0 == false is true), while strict equality checks type and value (0 === false is false).",
   "category": "types-coercion"
 }
