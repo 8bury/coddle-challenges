@@ -1,0 +1,15 @@
+{
+  "id": "2026-02-19",
+  "language": "go",
+  "difficulty": "medium",
+  "code": "package main\nimport \"fmt\"\nfunc main() {\n  ch := make(chan int)\n  go func() { ch <- 42 }()\n  fmt.Println(<-ch)\n}",
+  "options": [
+    "0",
+    "42",
+    "deadlock",
+    "panic"
+  ],
+  "correctIndex": 1,
+  "explanation": "The goroutine sends 42 on ch, and main receives it before printing.",
+  "category": "goroutines"
+}

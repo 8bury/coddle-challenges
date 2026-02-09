@@ -1,0 +1,15 @@
+{
+  "id": "2026-02-12",
+  "language": "javascript",
+  "difficulty": "easy",
+  "code": "console.log([] == false);",
+  "options": [
+    "true",
+    "false",
+    "TypeError",
+    "undefined"
+  ],
+  "correctIndex": 0,
+  "explanation": "Loose equality coerces both sides; [] becomes an empty string, then 0, which equals false (0).",
+  "category": "types-coercion"
+}

@@ -1,4 +1,4 @@
-﻿import { readdir, readFile } from 'node:fs/promises'
+import { readdir, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -8,13 +8,29 @@ const challengeDir = path.resolve(__dirname, '../challenges')
 
 const DATE_KEY_REGEX = /^\d{4}-\d{2}-\d{2}$/
 const VALID_DIFFICULTIES = new Set(['easy', 'medium', 'hard'])
+const VALID_LANGUAGES = new Set(['javascript', 'go', 'python'])
 const VALID_CATEGORIES = new Set([
+  // JavaScript
   'types-coercion',
   'scope-hoisting',
   'closures',
   'this',
   'async',
   'arrays-objects',
+  // Go
+  'pointers',
+  'goroutines',
+  'slices',
+  'interfaces',
+  'channels',
+  'error-handling',
+  // Python
+  'list-comprehensions',
+  'decorators',
+  'generators',
+  'context-managers',
+  'truthiness',
+  'mutability',
 ])
 
 function assert(condition, message) {
@@ -26,7 +42,10 @@ function assert(condition, message) {
 function validateChallengeShape(challenge) {
   assert(typeof challenge === 'object' && challenge !== null, 'Challenge must be an object.')
   assert(typeof challenge.id === 'string' && DATE_KEY_REGEX.test(challenge.id), 'id must match YYYY-MM-DD.')
-  assert(challenge.language === 'javascript', 'language must be "javascript".')
+  assert(
+    typeof challenge.language === 'string' && VALID_LANGUAGES.has(challenge.language),
+    'language must be javascript, go, or python.'
+  )
   assert(
     typeof challenge.difficulty === 'string' && VALID_DIFFICULTIES.has(challenge.difficulty),
     'difficulty must be easy, medium, or hard.',

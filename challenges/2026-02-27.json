@@ -1,0 +1,15 @@
+{
+  "id": "2026-02-27",
+  "language": "javascript",
+  "difficulty": "easy",
+  "code": "const a = [1, 2];\nconst b = [...a];\nb.push(3);\nconsole.log(a.length, b.length);",
+  "options": [
+    "2 2",
+    "3 3",
+    "2 3",
+    "3 2"
+  ],
+  "correctIndex": 2,
+  "explanation": "Spread creates a new array copy, so mutating b does not change a.",
+  "category": "arrays-objects"
+}

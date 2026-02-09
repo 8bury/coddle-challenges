@@ -1,0 +1,15 @@
+{
+  "id": "2026-03-28",
+  "language": "python",
+  "difficulty": "medium",
+  "code": "g = (x*x for x in range(3))\nprint(list(g))\nprint(list(g))",
+  "options": [
+    "[0, 1, 4] then [0, 1, 4]",
+    "[0, 1, 4] then []",
+    "[] then [0, 1, 4]",
+    "StopIteration"
+  ],
+  "correctIndex": 1,
+  "explanation": "Generators are exhausted after iteration.",
+  "category": "generators"
+}

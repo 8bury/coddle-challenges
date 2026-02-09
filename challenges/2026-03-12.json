@@ -1,0 +1,15 @@
+{
+  "id": "2026-03-12",
+  "language": "go",
+  "difficulty": "easy",
+  "code": "package main\nimport \"fmt\"\nfunc bump(n *int) { *n++ }\nfunc main() {\n  x := 4\n  bump(&x)\n  fmt.Println(x)\n}",
+  "options": [
+    "4",
+    "5",
+    "0",
+    "panic"
+  ],
+  "correctIndex": 1,
+  "explanation": "The function receives x by pointer and increments the pointed value.",
+  "category": "pointers"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "2026-03-11",
+  "language": "javascript",
+  "difficulty": "easy",
+  "code": "function demo() {\n  console.log(value);\n  var value = 7;\n}\ndemo();",
+  "options": [
+    "7",
+    "undefined",
+    "ReferenceError",
+    "null"
+  ],
+  "correctIndex": 1,
+  "explanation": "var declarations are hoisted and initialized to undefined before assignment.",
+  "category": "scope-hoisting"
+}

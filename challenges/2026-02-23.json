@@ -1,0 +1,15 @@
+{
+  "id": "2026-02-23",
+  "language": "python",
+  "difficulty": "easy",
+  "code": "from contextlib import nullcontext\nwith nullcontext(5) as x:\n    print(x)",
+  "options": [
+    "0",
+    "5",
+    "None",
+    "AttributeError"
+  ],
+  "correctIndex": 1,
+  "explanation": "nullcontext returns the provided value from __enter__.",
+  "category": "context-managers"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "2026-03-03",
+  "language": "go",
+  "difficulty": "medium",
+  "code": "package main\nimport \"fmt\"\nfunc main() {\n  a := []int{1,2,3}\n  b := a[:2]\n  b[0] = 9\n  fmt.Println(a[0], b[0])\n}",
+  "options": [
+    "1 9",
+    "9 9",
+    "1 1",
+    "panic"
+  ],
+  "correctIndex": 1,
+  "explanation": "Slices share the same backing array by default, so writing through b updates a.",
+  "category": "slices"
+}

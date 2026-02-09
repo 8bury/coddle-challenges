@@ -1,0 +1,15 @@
+{
+  "id": "2026-03-14",
+  "language": "javascript",
+  "difficulty": "medium",
+  "code": "function makeCounter() {\n  let n = 0;\n  return () => ++n;\n}\nconst c = makeCounter();\nconsole.log(c(), c());",
+  "options": [
+    "1 1",
+    "0 1",
+    "1 2",
+    "2 3"
+  ],
+  "correctIndex": 2,
+  "explanation": "The inner function closes over n, so state is preserved between calls.",
+  "category": "closures"
+}

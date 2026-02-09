@@ -1,4 +1,4 @@
-﻿{
+{
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Coddle Challenge",
   "type": "object",
@@ -18,7 +18,7 @@
     },
     "language": {
       "type": "string",
-      "const": "javascript"
+      "enum": ["javascript", "go", "python"]
     },
     "difficulty": {
       "type": "string",
@@ -52,7 +52,19 @@
         "closures",
         "this",
         "async",
-        "arrays-objects"
+        "arrays-objects",
+        "pointers",
+        "goroutines",
+        "slices",
+        "interfaces",
+        "channels",
+        "error-handling",
+        "list-comprehensions",
+        "decorators",
+        "generators",
+        "context-managers",
+        "truthiness",
+        "mutability"
       ]
     }
   },

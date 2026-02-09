@@ -1,0 +1,15 @@
+{
+  "id": "2026-03-21",
+  "language": "go",
+  "difficulty": "hard",
+  "code": "package main\nimport \"fmt\"\nfunc main() {\n  var p *int = nil\n  var i interface{} = p\n  fmt.Println(i == nil)\n}",
+  "options": [
+    "true",
+    "false",
+    "panic",
+    "compile error"
+  ],
+  "correctIndex": 1,
+  "explanation": "An interface is nil only when both dynamic type and value are nil; here type is *int.",
+  "category": "interfaces"
+}

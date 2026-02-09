@@ -1,0 +1,15 @@
+{
+  "id": "2026-03-24",
+  "language": "go",
+  "difficulty": "easy",
+  "code": "package main\nimport (\"errors\"; \"fmt\")\nfunc run(fail bool) error {\n  if fail { return errors.New(\"x\") }\n  return nil\n}\nfunc main() {\n  if err := run(true); err != nil {\n    fmt.Println(\"handled\")\n  }\n}",
+  "options": [
+    "handled",
+    "x",
+    "nil",
+    "panic"
+  ],
+  "correctIndex": 0,
+  "explanation": "Go checks errors explicitly; err is non-nil so the handled branch runs.",
+  "category": "error-handling"
+}

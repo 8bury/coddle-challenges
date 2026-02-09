@@ -1,0 +1,15 @@
+{
+  "id": "2026-03-30",
+  "language": "go",
+  "difficulty": "medium",
+  "code": "package main\nimport \"fmt\"\nfunc main() {\n  ch := make(chan int, 2)\n  ch <- 1\n  ch <- 2\n  fmt.Println(<-ch + <-ch)\n}",
+  "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "correctIndex": 2,
+  "explanation": "Two buffered sends are received and summed: 1 + 2 = 3.",
+  "category": "channels"
+}

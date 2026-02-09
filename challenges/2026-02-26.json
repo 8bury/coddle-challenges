@@ -1,0 +1,15 @@
+{
+  "id": "2026-02-26",
+  "language": "python",
+  "difficulty": "easy",
+  "code": "print(bool([]), bool([0]), bool(\"\"), bool(\"0\"))",
+  "options": [
+    "False False False False",
+    "False True False True",
+    "True True False True",
+    "False True True False"
+  ],
+  "correctIndex": 1,
+  "explanation": "Empty containers/strings are falsey; non-empty ones are truthy even if they contain 0.",
+  "category": "truthiness"
+}

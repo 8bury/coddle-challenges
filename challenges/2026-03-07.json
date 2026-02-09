@@ -1,0 +1,15 @@
+{
+  "id": "2026-03-07",
+  "language": "python",
+  "difficulty": "medium",
+  "code": "x = None\nprint(x or 10, x and 10)",
+  "options": [
+    "None None",
+    "10 10",
+    "10 None",
+    "0 10"
+  ],
+  "correctIndex": 2,
+  "explanation": "or returns first truthy value, and returns the first falsey value.",
+  "category": "truthiness"
+}

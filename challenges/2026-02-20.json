@@ -1,0 +1,15 @@
+{
+  "id": "2026-02-20",
+  "language": "python",
+  "difficulty": "medium",
+  "code": "def gen():\n    yield 1\n    yield 2\n\ng = gen()\nprint(next(g), next(g))",
+  "options": [
+    "1 1",
+    "1 2",
+    "2 2",
+    "StopIteration"
+  ],
+  "correctIndex": 1,
+  "explanation": "Each next() advances the generator to the next yield.",
+  "category": "generators"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "2026-02-14",
+  "language": "python",
+  "difficulty": "easy",
+  "code": "nums = [1, 2, 3, 4]\nprint([n * 2 for n in nums if n % 2 == 0])",
+  "options": [
+    "[2, 4, 6, 8]",
+    "[4, 8]",
+    "[2, 6]",
+    "[1, 2, 3, 4]"
+  ],
+  "correctIndex": 1,
+  "explanation": "Only even numbers are kept (2,4) and then multiplied by 2.",
+  "category": "list-comprehensions"
+}

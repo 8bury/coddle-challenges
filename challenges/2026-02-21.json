@@ -1,0 +1,15 @@
+{
+  "id": "2026-02-21",
+  "language": "javascript",
+  "difficulty": "medium",
+  "code": "const obj = {\n  x: 10,\n  getX() { return this.x; }\n};\nconst f = obj.getX;\nconsole.log(f());",
+  "options": [
+    "10",
+    "undefined",
+    "null",
+    "TypeError"
+  ],
+  "correctIndex": 1,
+  "explanation": "Calling f() loses obj as the receiver, so this.x is undefined in this context.",
+  "category": "this"
+}

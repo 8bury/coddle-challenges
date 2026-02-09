@@ -1,0 +1,15 @@
+{
+  "id": "2026-03-29",
+  "language": "javascript",
+  "difficulty": "easy",
+  "code": "console.log('5' - 2, '5' + 2);",
+  "options": [
+    "3 7",
+    "3 52",
+    "52 3",
+    "NaN 52"
+  ],
+  "correctIndex": 1,
+  "explanation": "Subtraction coerces to numbers; addition with a string performs concatenation.",
+  "category": "types-coercion"
+}

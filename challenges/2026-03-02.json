@@ -1,0 +1,15 @@
+{
+  "id": "2026-03-02",
+  "language": "javascript",
+  "difficulty": "hard",
+  "code": "for (let i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 0);\n}",
+  "options": [
+    "3 3 3",
+    "0 1 2",
+    "0 0 0",
+    "ReferenceError"
+  ],
+  "correctIndex": 1,
+  "explanation": "let is block-scoped, creating a new i binding for each iteration.",
+  "category": "closures"
+}

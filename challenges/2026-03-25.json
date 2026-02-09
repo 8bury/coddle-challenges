@@ -1,0 +1,15 @@
+{
+  "id": "2026-03-25",
+  "language": "python",
+  "difficulty": "hard",
+  "code": "def add(item, bucket=[]):\n    bucket.append(item)\n    return bucket\n\nprint(add(1))\nprint(add(2))",
+  "options": [
+    "[1] then [2]",
+    "[1] then [1, 2]",
+    "[1, 2] then [1, 2]",
+    "TypeError"
+  ],
+  "correctIndex": 1,
+  "explanation": "Default mutable arguments are reused between calls.",
+  "category": "mutability"
+}
